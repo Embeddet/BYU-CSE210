@@ -9,7 +9,8 @@ class Program
     static void Main()
     {
         // Load a scripture from a file (optional feature)
-        Scripture scripture = LoadScriptureFromFile("scripture.txt");
+        Scripture scripture = null;
+        scripture = LoadScriptureFromFile("scripture.txt");
         
         if (scripture == null) // Fallback in case file loading fails
         {
