@@ -1,0 +1,18 @@
+public class Rectangle : Shape
+{
+    private double _length;
+    private double _width;
+
+    // Constructor that calls the base class constructor
+    public Rectangle(string color, double length, double width) : base(color)
+    {
+        _length = length;
+        _width = width;
+    }
+
+    // Override the GetArea method to calculate the area of the rectangle
+    public override double GetArea()
+    {
+        return _length * _width;
+    }
+}
